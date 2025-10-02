@@ -1,19 +1,18 @@
-# Age Calculator - CodeAlpha Web Development Internship
+# 📝 To-Do List App - CodeAlpha Web Development Internship
 
-A web-based age calculator that calculates exact age in years, months, and days using vanilla JavaScript.
+A modern to-do list application with CRUD operations and localStorage persistence.
 
 ## Features
-- Date of birth input validation
-- Accurate age calculation
+- Add, edit, delete tasks
+- Mark tasks as complete
+- Filter tasks (All/Active/Completed)
+- Data persistence with localStorage
 - Responsive design
-- Error handling
 
 ## Tech Stack
 - HTML5
 - CSS3
 - Vanilla JavaScript
-
-## Live Demo
 
 ## Author
 [Swayam Harawade] - CodeAlpha Web Development Intern

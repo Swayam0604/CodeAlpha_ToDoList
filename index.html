@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List | CodeAlpha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <header>
+                <h1>📝 My To-Do List</h1>
+                <p>Organize your tasks efficiently</p>
+            </header>
+            
+            <!-- Add Task Section -->
+            <div class="add-task-section">
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="Add a new task..." maxlength="100">
+                    <button id="addBtn" class="add-btn">
+                        <span class="btn-text">Add Task</span>
+                        <span class="btn-icon">➕</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Filter/Stats Section -->
+            <div class="stats-section">
+                <div class="task-stats">
+                    <span id="totalTasks">0</span> total tasks, 
+                    <span id="completedTasks">0</span> completed
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+            </div>
+            
+            <!-- Tasks List -->
+            <div class="tasks-section">
+                <ul id="tasksList" class="tasks-list">
+                    <!-- Sample task to see styling -->
+                    <li class="task-item">
+                        <input type="checkbox" class="task-checkbox">
+                        <span class="task-text">Sample task - will be replaced by JavaScript</span>
+                        <div class="task-actions">
+                            <button class="action-icon edit-btn" title="Edit task">✏️</button>
+                            <button class="action-icon delete-btn" title="Delete task">🗑️</button>
+                        </div>
+                    </li>
+                    <li class="task-item completed">
+                        <input type="checkbox" class="task-checkbox" checked>
+                        <span class="task-text">Completed sample task</span>
+                        <div class="task-actions">
+                            <button class="action-icon edit-btn" title="Edit task">✏️</button>
+                            <button class="action-icon delete-btn" title="Delete task">🗑️</button>
+                        </div>
+                    </li>
+                </ul>
+                
+                <!-- Empty State (hidden initially for styling purposes) -->
+                <div id="emptyState" class="empty-state hidden">
+                    <div class="empty-icon">📋</div>
+                    <h3>No tasks yet!</h3>
+                    <p>Add your first task above to get started.</p>
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="actions-section">
+                <button id="clearCompleted" class="action-btn">Clear Completed</button>
+                <button id="clearAll" class="action-btn danger">Clear All</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
