@@ -1,6 +1,3 @@
-Here's the complete README.md content to replace your current file:
-
-```markdown
 # 📝 To-Do List App - CodeAlpha Web Development Internship
 
 > A modern, feature-rich to-do list application built with vanilla JavaScript, featuring CRUD operations, localStorage persistence, and a stunning neon-themed UI.
