@@ -63,6 +63,7 @@ header p {
 
 #taskInput {
     flex: 1;
+    width: 100%;
     padding: 20px 25px;
     border: 2px solid #e1e5e9;
     border-radius: 15px;
